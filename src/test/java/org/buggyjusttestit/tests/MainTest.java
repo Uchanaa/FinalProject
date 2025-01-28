@@ -9,9 +9,11 @@ import org.testng.annotations.Test;
 public class MainTest extends BaseTest {
 
 
+
+
     @Test
     public void testLogout() {
-        // ლოგაუთის ტესტირება
+        // check logout
         MainPage MainPage = new MainPage(driver);
         MainPage.clickLogout();
         LoginPage LoginPage = new LoginPage(driver);

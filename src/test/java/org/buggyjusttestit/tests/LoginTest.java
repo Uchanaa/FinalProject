@@ -9,12 +9,16 @@ import org.testng.annotations.Test;
 
 
 public class LoginTest extends BaseTest {
+
+
+
+
     @Test
     public void testValidLogin() {
         LoginPage LoginPage = new LoginPage(driver);
         LoginPage.login("giorgi", "Password1@");
 
-        // ჰედერის ტექსტის შემოწმება
+        // check header text
         MainPage MainPage = new MainPage(driver);
         String expectedHeaderText = "Profile";
         String actualHeaderText = MainPage.GetHeaderText();
@@ -23,7 +27,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void testLoginButtonTextColor() {
-        //ლოგი ღილაკის ტექსტის ფერის შემოწმება
+       // check login button color
         LoginPage LoginPage = new LoginPage(driver);
         String expectedColor = "rgba(255, 255, 255, 1)";
         String actualColor = LoginPage.getLoginButtonTextColor();
