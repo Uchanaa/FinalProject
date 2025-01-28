@@ -1,5 +1,6 @@
 package org.buggyjusttestit.tests;
 import org.buggyjusttestit.BaseTest;
+import org.buggyjusttestit.data.MainTestData;
 import org.buggyjusttestit.pages.LoginPage;
 import org.buggyjusttestit.pages.MainPage;
 import org.testng.Assert;
@@ -18,7 +19,7 @@ public class MainTest extends BaseTest {
         MainPage.clickLogout();
         LoginPage LoginPage = new LoginPage(driver);
         boolean isLoginButtonVisible = LoginPage.isLoginButtonVisible();
-        Assert.assertTrue(isLoginButtonVisible, "Logout was not successful!");
+        Assert.assertTrue(isLoginButtonVisible, MainTestData.LOGOUT_ERROR_MESSAGE);
 
     }
 }
