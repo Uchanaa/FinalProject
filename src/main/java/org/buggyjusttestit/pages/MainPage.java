@@ -22,7 +22,7 @@ public class MainPage extends BasePage {
 
     public void clickLogout(){
         waitUntilElementToBeClickable(logoutButton);
-        logoutButton.click();
+        clickToElement(logoutButton);
     }
 
 }

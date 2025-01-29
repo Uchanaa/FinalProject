@@ -14,4 +14,11 @@
             <class name="org.buggyjusttestit.tests.MainTest"/>
         </classes>
     </test>
+    <test name="API Tests">
+        <classes>
+            <class name="org.buggyjusttestit.tests.ApiTest" />
+        </classes>
+    </test>
+
+
 </suite>
