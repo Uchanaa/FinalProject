@@ -14,4 +14,26 @@
             <class name="org.buggyjusttestit.tests.MainTest"/>
         </classes>
     </test>
+    <test name="API Tests">
+        <classes>
+            <class name="org.buggyjusttestit.tests.ApiTest" />
+        </classes>
+    </test>
+    <test name="Popular Model">
+        <classes>
+            <class name="org.buggyjusttestit.tests.PopularModelTest" />
+        </classes>
+    </test>
+    <test name="Popular Make">
+        <classes>
+            <class name="org.buggyjusttestit.tests.PopularMakeTest" />
+        </classes>
+    </test>
+    <test name="Overall Rating">
+        <classes>
+            <class name="org.buggyjusttestit.tests.OverallRatingTest" />
+        </classes>
+    </test>
+
+
 </suite>

@@ -22,6 +22,10 @@ public class LoginPage extends BasePage {
     WebElement loginButton;
 
 
+
+     @FindBy(xpath = "//img[@title='Lamborghini']")
+     WebElement popularMake;
+
     public void login(String username, String password) {
 
         enterText(usernameField, username);
@@ -38,5 +42,7 @@ public class LoginPage extends BasePage {
     public boolean isLoginButtonVisible(){
         return loginButton.isDisplayed();
     }
+
+
 }
 
